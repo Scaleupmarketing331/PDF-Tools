@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDF Tools — Free Online PDF Tools</title>
+    <meta name="description" content="Free online PDF tools to merge, split, convert and manage your PDF files.">
+    <meta name="keywords" content="PDF tools, PDF converter, merge PDF, JPG to PDF, PDF splitter, free PDF tools">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PDF Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">P</span>
+                <span>PDF<span class="logo-highlight">Tools</span></span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#tools">Tools</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="badge">
+                    ⚡ 100% Free Online PDF Tools
+                </div>
+
+                <h1>
+                    Everything You Need<br>
+                    <span>For Your PDFs</span>
+                </h1>
+
+                <p>
+                    Merge, convert, split and manage your PDF files
+                    quickly and easily — directly in your browser.
+                </p>
+
+                <a href="#tools" class="hero-button">
+                    Explore PDF Tools
+                    <span>→</span>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- TOOLS -->
+        <section class="tools-section" id="tools">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">PDF TOOLKIT</span>
+                    <h2>Choose Your Tool</h2>
+                    <p>
+                        Simple, fast and easy-to-use tools for your everyday PDF needs.
+                    </p>
+                </div>
+
+
+                <div class="tools-grid">
+
+                    <!-- MERGE PDF -->
+                    <div class="tool-card" data-tool="merge">
+                        <div class="tool-icon blue">⇄</div>
+                        <h3>Merge PDF</h3>
+                        <p>
+                            Combine multiple PDF files into one document.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- JPG TO PDF -->
+                    <div class="tool-card" data-tool="jpg-to-pdf">
+                        <div class="tool-icon purple">▣</div>
+                        <h3>JPG to PDF</h3>
+                        <p>
+                            Convert your images into a professional PDF.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- PDF TO JPG -->
+                    <div class="tool-card" data-tool="pdf-to-jpg">
+                        <div class="tool-icon cyan">▤</div>
+                        <h3>PDF to JPG</h3>
+                        <p>
+                            Convert PDF pages into high-quality images.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- SPLIT PDF -->
+                    <div class="tool-card" data-tool="split">
+                        <div class="tool-icon green">✂</div>
+                        <h3>Split PDF</h3>
+                        <p>
+                            Extract selected pages from your PDF.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- COMPRESS PDF -->
+                    <div class="tool-card" data-tool="compress">
+                        <div class="tool-icon orange">↓</div>
+                        <h3>Compress PDF</h3>
+                        <p>
+                            Reduce PDF file size for easier sharing.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- ROTATE PDF -->
+                    <div class="tool-card" data-tool="rotate">
+                        <div class="tool-icon pink">↻</div>
+                        <h3>Rotate PDF</h3>
+                        <p>
+                            Rotate PDF pages to the correct orientation.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- DELETE PAGES -->
+                    <div class="tool-card" data-tool="delete-pages">
+                        <div class="tool-icon red">⌫</div>
+                        <h3>Delete Pages</h3>
+                        <p>
+                            Remove unwanted pages from your PDF.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- EXTRACT PAGES -->
+                    <div class="tool-card" data-tool="extract">
+                        <div class="tool-icon yellow">▤</div>
+                        <h3>Extract Pages</h3>
+                        <p>
+                            Create a new PDF from selected pages.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- WATERMARK -->
+                    <div class="tool-card" data-tool="watermark">
+                        <div class="tool-icon violet">✦</div>
+                        <h3>Watermark PDF</h3>
+                        <p>
+                            Add your own text watermark to PDF pages.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- TEXT TO PDF -->
+                    <div class="tool-card" data-tool="text-to-pdf">
+                        <div class="tool-icon teal">T</div>
+                        <h3>Text to PDF</h3>
+                        <p>
+                            Turn your text into a downloadable PDF.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- QR CODE -->
+                    <div class="tool-card" data-tool="qr">
+                        <div class="tool-icon blue">▦</div>
+                        <h3>QR Code</h3>
+                        <p>
+                            Generate QR codes for links and text.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+
+                    <!-- IMAGE COMPRESS -->
+                    <div class="tool-card" data-tool="image-compress">
+                        <div class="tool-icon purple">◉</div>
+                        <h3>Compress Image</h3>
+                        <p>
+                            Reduce image size while keeping good quality.
+                        </p>
+                        <button class="tool-button">
+                            Open Tool →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="features">
+
+            <div class="container">
+
+                <div class="features-grid">
+
+                    <div class="feature">
+                        <span>🔒</span>
+                        <div>
+                            <h3>Private</h3>
+                            <p>Your files can be processed directly in your browser.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>⚡</span>
+                        <div>
+                            <h3>Fast</h3>
+                            <p>Simple tools designed for quick everyday tasks.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>📱</span>
+                        <div>
+                            <h3>Mobile Friendly</h3>
+                            <p>Use PDF Tools from your phone, tablet or computer.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+
+            <div class="container about-content">
+
+                <span class="section-label">ABOUT PDF TOOLS</span>
+
+                <h2>
+                    Simple PDF Tools<br>
+                    For Everyone
+                </h2>
+
+                <p>
+                    PDF Tools is designed to provide useful document
+                    utilities in one simple and easy-to-use website.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- TOOL MODAL -->
+    <div class="modal" id="toolModal">
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div class="modal-box">
+
+            <button class="close-modal" id="closeModal">
+                ×
+            </button>
+
+            <div id="toolContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">P</span>
+                    <span>PDF<span class="logo-highlight">Tools</span></span>
+                </div>
+
+                <p>
+                    Free online PDF tools for everyone.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#tools">Tools</a>
+                <a href="#about">About</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 PDF Tools. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</body>
+</body>
+</html>
